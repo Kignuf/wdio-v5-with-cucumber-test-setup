@@ -15,3 +15,7 @@ coverage
 !.vscode/extensions.json
 package-lock.json
 yarn.lock
+
+# Allure
+allure-report
+allure-results

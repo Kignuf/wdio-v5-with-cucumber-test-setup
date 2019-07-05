@@ -34,6 +34,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/cucumber": "^4.0.5",
+    "@wdio/allure-reporter": "^5.10.10",
     "@wdio/cli": "^5.10.7",
     "@wdio/config": "next",
     "@wdio/cucumber-framework": "^5.0.0",
