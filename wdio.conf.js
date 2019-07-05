@@ -234,11 +234,16 @@ exports.config = {
     //
     // Gets executed after all tests are done. You still have access to all
     // global variables from the test.
-    // after: function after(result, capabilities, specs) {
-    // },
+    after: function after(result, capabilities, specs) {
+        console.log('Wdio After:');
+    },
+    afterSession() {
+        console.log('afterSession');
+    },
     //
     // Gets executed after all workers got shut down and the process is about to
     // exit. It is not possible to defer the end of the process using a promise.
-    // onComplete: function onComplete(exitCode) {
-    // }
+    onComplete: function onComplete(exitCode) {
+        console.log('onComplete:', exitCode);
+    },
 };
