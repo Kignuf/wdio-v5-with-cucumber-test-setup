@@ -4,7 +4,9 @@
  *                                 expected value or not
  * @param  {String}   expectedPath The expected path to match against
  */
-module.exports = (falseCase, expectedPath) => {
+module.exports = function checkURLPath(falseCase, expectedPath) {
+    this.count += 1;
+    console.log(`DEBUG - from ${__filename}`, this.count);
     /**
      * The URL of the current browser window
      * @type {String}
