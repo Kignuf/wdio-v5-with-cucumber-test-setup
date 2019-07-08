@@ -235,10 +235,10 @@ exports.config = {
     // Gets executed after all tests are done. You still have access to all
     // global variables from the test.
     after: function after(result, capabilities, specs) {
-        console.log('Wdio After:');
+        console.log('[DEBUG] WDIO After');
     },
     afterSession() {
-        console.log('afterSession');
+        console.log('[DEBUG] WDIO afterSession');
     },
     //
     // Gets executed after all workers got shut down and the process is about to

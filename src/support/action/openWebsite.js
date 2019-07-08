@@ -9,5 +9,6 @@ module.exports = (type, page) => {
      * @type {String}
      */
     const url = (type === 'url') ? page : browser.options.baseUrl + page;
+    console.log('[DEBUG] Opening url', url);
     browser.url(url);
 };

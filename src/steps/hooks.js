@@ -5,11 +5,11 @@ const { Before, After } = require('cucumber');
 
 Before(function () {
     this.count = 0;
-    console.log('DEBUG - from before hook', this.count);
+    console.log('[DEBUG] - Cucumber Before hook');
 });
 
 After(function (context) {
     this.count += 1;
-    console.log('DEBUG - from after hook', this.count);
-    console.log('Result:', context.result.status);
+    console.log('[DEBUG] - Cucumber After hook');
+    // console.log('Result:', context.result.status);
 });
