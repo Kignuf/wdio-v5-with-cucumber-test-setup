@@ -2,7 +2,7 @@
 const { default: Launcher } = require('@wdio/cli');
 
 function main() {
-    const wdio = new Launcher(`${__dirname}/wdio.conf.js`);
+    const wdio = new Launcher(`${__dirname}/wdio.conf.js`, {});
 
     console.log('Starting tests');
     wdio.run()
