@@ -29,6 +29,11 @@ When(
 );
 
 When(
+    /^I (add|set) ([^"]*)? to the inputfield "([^"]*)?"$/,
+    setInputField
+);
+
+When(
     /^I clear the inputfield "([^"]*)?"$/,
     clearInputField
 );

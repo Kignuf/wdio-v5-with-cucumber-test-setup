@@ -22,6 +22,16 @@ import openWebsite from '../support/action/openWebsite';
 import setWindowSize from '../support/action/setWindowSize';
 
 Given(
+    /^using following credentials$/,
+    // eslint-disable-next-line func-names
+    function (rawDataTable) {
+        const data = rawDataTable.hashes()[0];
+        this.data = data;
+        console.dir(data);
+    }
+);
+
+Given(
     /^I open the (url|site) "([^"]*)?"$/,
     openWebsite
 );
