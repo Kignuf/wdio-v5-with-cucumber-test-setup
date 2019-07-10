@@ -1,34 +1,35 @@
-import checkClass from '../support/check/checkClass';
-import checkContainsAnyText from '../support/check/checkContainsAnyText';
-import checkIsEmpty from '../support/check/checkIsEmpty';
-import checkContainsText from '../support/check/checkContainsText';
-import checkCookieContent from '../support/check/checkCookieContent';
-import checkCookieExists from '../support/check/checkCookieExists';
-import checkDimension from '../support/check/checkDimension';
-import checkEqualsText from '../support/check/checkEqualsText';
-import checkFocus from '../support/check/checkFocus';
-import checkInURLPath from '../support/check/checkInURLPath';
-import checkIsOpenedInNewWindow from
-    '../support/check/checkIsOpenedInNewWindow';
-import checkModal from '../support/check/checkModal';
-import checkModalText from '../support/check/checkModalText';
-import checkNewWindow from '../support/check/checkNewWindow';
-import checkOffset from '../support/check/checkOffset';
-import checkProperty from '../support/check/checkProperty';
-import checkFontProperty from '../support/check/checkFontProperty';
-import checkSelected from '../support/check/checkSelected';
-import checkTitle from '../support/check/checkTitle';
-import checkTitleContains from '../support/check/checkTitleContains';
-import checkURL from '../support/check/checkURL';
-import checkURLPath from '../support/check/checkURLPath';
-import checkWithinViewport from '../support/check/checkWithinViewport';
-import compareText from '../support/check/compareText';
-import isEnabled from '../support/check/isEnabled';
-import isExisting from '../support/check/isExisting';
-import isVisible from '../support/check/isDisplayed';
-import waitFor from '../support/action/waitFor';
-import waitForVisible from '../support/action/waitForDisplayed';
-import checkIfElementExists from '../support/lib/checkIfElementExists';
+/* eslint-disable import/order */
+const checkClass = require('../support/check/checkClass');
+const checkContainsAnyText = require('../support/check/checkContainsAnyText');
+const checkIsEmpty = require('../support/check/checkIsEmpty');
+const checkContainsText = require('../support/check/checkContainsText');
+const checkCookieContent = require('../support/check/checkCookieContent');
+const checkCookieExists = require('../support/check/checkCookieExists');
+const checkDimension = require('../support/check/checkDimension');
+const checkEqualsText = require('../support/check/checkEqualsText');
+const checkFocus = require('../support/check/checkFocus');
+const checkInURLPath = require('../support/check/checkInURLPath');
+// eslint-disable-next-line max-len
+const checkIsOpenedInNewWindow = require('../support/check/checkIsOpenedInNewWindow');
+const checkModal = require('../support/check/checkModal');
+const checkModalText = require('../support/check/checkModalText');
+const checkNewWindow = require('../support/check/checkNewWindow');
+const checkOffset = require('../support/check/checkOffset');
+const checkProperty = require('../support/check/checkProperty');
+const checkFontProperty = require('../support/check/checkFontProperty');
+const checkSelected = require('../support/check/checkSelected');
+const checkTitle = require('../support/check/checkTitle');
+const checkTitleContains = require('../support/check/checkTitleContains');
+const checkURL = require('../support/check/checkURL');
+const checkURLPath = require('../support/check/checkURLPath');
+const checkWithinViewport = require('../support/check/checkWithinViewport');
+const compareText = require('../support/check/compareText');
+const isEnabled = require('../support/check/isEnabled');
+const isExisting = require('../support/check/isExisting');
+const isVisible = require('../support/check/isDisplayed');
+const waitFor = require('../support/action/waitFor');
+const waitForVisible = require('../support/action/waitForDisplayed');
+const checkIfElementExists = require('../support/lib/checkIfElementExists');
 
 const { Then } = require('cucumber');
 

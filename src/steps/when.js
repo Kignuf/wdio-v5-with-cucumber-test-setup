@@ -1,19 +1,21 @@
-import clearInputField from '../support/action/clearInputField';
-import clickElement from '../support/action/clickElement';
-import closeLastOpenedWindow from '../support/action/closeLastOpenedWindow';
-import deleteCookies from '../support/action/deleteCookies';
-import dragElement from '../support/action/dragElement';
-import focusLastOpenedWindow from '../support/action/focusLastOpenedWindow';
-import handleModal from '../support/action/handleModal';
-import moveTo from '../support/action/moveTo';
-import pause from '../support/action/pause';
-import pressButton from '../support/action/pressButton';
-import scroll from '../support/action/scroll';
-import selectOption from '../support/action/selectOption';
-import selectOptionByIndex from '../support/action/selectOptionByIndex';
-import setCookie from '../support/action/setCookie';
-import setInputField from '../support/action/setInputField';
-import setPromptText from '../support/action/setPromptText';
+/* eslint-disable import/order */
+/* eslint-disable max-len */
+const clearInputField = require('../support/action/clearInputField');
+const clickElement = require('../support/action/clickElement');
+const closeLastOpenedWindow = require('../support/action/closeLastOpenedWindow');
+const deleteCookies = require('../support/action/deleteCookies');
+const dragElement = require('../support/action/dragElement');
+const focusLastOpenedWindow = require('../support/action/focusLastOpenedWindow');
+const handleModal = require('../support/action/handleModal');
+const moveTo = require('../support/action/moveTo');
+const pause = require('../support/action/pause');
+const pressButton = require('../support/action/pressButton');
+const scroll = require('../support/action/scroll');
+const selectOption = require('../support/action/selectOption');
+const selectOptionByIndex = require('../support/action/selectOptionByIndex');
+const setCookie = require('../support/action/setCookie');
+const setInputField = require('../support/action/setInputField');
+const setPromptText = require('../support/action/setPromptText');
 
 const { When } = require('cucumber');
 

@@ -1,25 +1,25 @@
-import { Given } from 'cucumber';
+const { Given } = require('cucumber');
 
-import checkContainsAnyText from '../support/check/checkContainsAnyText';
-import checkIsEmpty from '../support/check/checkIsEmpty';
-import checkContainsText from '../support/check/checkContainsText';
-import checkCookieContent from '../support/check/checkCookieContent';
-import checkCookieExists from '../support/check/checkCookieExists';
-import checkDimension from '../support/check/checkDimension';
-import checkElementExists from '../support/check/checkElementExists';
-import checkEqualsText from '../support/check/checkEqualsText';
-import checkModal from '../support/check/checkModal';
-import checkOffset from '../support/check/checkOffset';
-import checkProperty from '../support/check/checkProperty';
-import checkSelected from '../support/check/checkSelected';
-import checkTitle from '../support/check/checkTitle';
-import checkUrl from '../support/check/checkURL';
-import closeAllButFirstTab from '../support/action/closeAllButFirstTab';
-import compareText from '../support/check/compareText';
-import isEnabled from '../support/check/isEnabled';
-import isDisplayed from '../support/check/isDisplayed';
-import openWebsite from '../support/action/openWebsite';
-import setWindowSize from '../support/action/setWindowSize';
+const checkContainsAnyText = require('../support/check/checkContainsAnyText');
+const checkIsEmpty = require('../support/check/checkIsEmpty');
+const checkContainsText = require('../support/check/checkContainsText');
+const checkCookieContent = require('../support/check/checkCookieContent');
+const checkCookieExists = require('../support/check/checkCookieExists');
+const checkDimension = require('../support/check/checkDimension');
+const checkElementExists = require('../support/check/checkElementExists');
+const checkEqualsText = require('../support/check/checkEqualsText');
+const checkModal = require('../support/check/checkModal');
+const checkOffset = require('../support/check/checkOffset');
+const checkProperty = require('../support/check/checkProperty');
+const checkSelected = require('../support/check/checkSelected');
+const checkTitle = require('../support/check/checkTitle');
+const checkUrl = require('../support/check/checkURL');
+const closeAllButFirstTab = require('../support/action/closeAllButFirstTab');
+const compareText = require('../support/check/compareText');
+const isEnabled = require('../support/check/isEnabled');
+const isDisplayed = require('../support/check/isDisplayed');
+const openWebsite = require('../support/action/openWebsite');
+const setWindowSize = require('../support/action/setWindowSize');
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
