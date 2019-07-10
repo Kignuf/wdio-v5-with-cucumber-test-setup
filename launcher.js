@@ -2,7 +2,7 @@
 const { default: Launcher } = require('@wdio/cli');
 
 function main() {
-    const wdio = new Launcher(`${__dirname}/wdio.conf.js`, {});
+    const wdio = new Launcher(`${__dirname}/wdio.conf.js`, { specs: ['src/features/happn.feature'] });
 
     console.log('Starting tests');
     wdio.run()

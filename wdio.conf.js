@@ -1,4 +1,8 @@
 const path = require('path');
+const logger = require('@wdio/logger').default;
+
+// const log = console;
+const log = logger('custom logger');
 
 exports.config = {
     //
@@ -68,7 +72,7 @@ exports.config = {
     //
     // Set a base URL in order to shorten getUrl command calls. If your getUrl
     // parameter starts with "/", then the base getUrl gets prepended.
-    baseUrl: 'http://the-internet.herokuapp.com/login',
+    baseUrl: 'https://www.happn.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -194,6 +198,13 @@ exports.config = {
         global.expect = chai.expect;
         global.assert = chai.assert;
         global.should = chai.should();
+
+        // log.log('Before browser.url in before hook');
+        // browser.url('https://google.com');
+        // log.log('After browser.url in before hook');
+        throw new Error('boum!');
+        browser.truc = 'bidule';
+        log.log('Wdio Before is done. truc:', browser.truc);
     },
     //
     // Hook that gets executed before the suite starts
@@ -234,16 +245,16 @@ exports.config = {
     //
     // Gets executed after all tests are done. You still have access to all
     // global variables from the test.
-    after: function after(result, capabilities, specs) {
-        console.log('[DEBUG] WDIO After');
+    after: function after(/* result, capabilities, specs */) {
+        log.log('[DEBUG] WDIO After');
     },
     afterSession() {
-        console.log('[DEBUG] WDIO afterSession');
+        log.log('[DEBUG] WDIO afterSession');
     },
     //
     // Gets executed after all workers got shut down and the process is about to
     // exit. It is not possible to defer the end of the process using a promise.
     onComplete: function onComplete(exitCode) {
-        console.log('onComplete:', exitCode);
+        log.log('onComplete:', exitCode);
     },
 };
